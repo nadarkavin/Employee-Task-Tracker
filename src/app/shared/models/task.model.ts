@@ -1,3 +1,5 @@
+export type TaskStatus = 'ON_TRACK' | 'WARNING' | 'OVERDUE' | 'COMPLETED';
+
 export interface Task {
   id: number;
   title: string;
@@ -5,5 +7,5 @@ export interface Task {
   assignedTo: string;
   startDate: string;
   endDate: string;
-  status: 'ON_TRACK' | 'WARNING' | 'OVERDUE';
+  status: TaskStatus;
 }
